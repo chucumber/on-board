@@ -1,7 +1,7 @@
 //index//
 
 $(document).ready(function() {
-    alert('Let your fingers be on board and start this trip.(desktop only)');        
+    alert('Let your fingers be on board and start this trip :D(desktop only)');        
 });
 
 
