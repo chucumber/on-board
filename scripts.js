@@ -1,9 +1,19 @@
 //index//
 
-$(".x").keydown(function (evt){
-        if(evt.keyCode == 191){
-            alert('Step on NUMBER KEYS to choose your destination. Jump on ENTER if you are ready to go');
-        }
+// $(window).keydown(function (evt){
+//         if(evt.keyCode == 191){
+//             alert('Step on NUMBER KEYS to choose your destination. Jump on ENTER if you are ready to go');
+//         }
+// });
+
+$(window).keydown(function(event) {
+    if (event.keyCode == 191) {
+        $(".button").click();
+    }
+});
+
+$(".button").click(function() {
+    alert('Step on NUMBER KEYS to choose your destination. Jump on ENTER if you are ready to go');
 });
 
 $(window).keydown(function (evt) {
