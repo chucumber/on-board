@@ -1,48 +1,77 @@
 <!doctype html>
 <html>
 <head>
-    <title>take a walk</title>
+    <title>The World at Your Fingertips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="memory droppable" id="m1"><img src="img/1.jpg" width="150px"></div>
-    <div class="memory droppable" id="m2"><img src="img/2.jpg" width="150px"></div>
-    <div class="memory droppable" id="m3"><img src="img/3.jpg" width="150px"></div>
-    <div class="memory droppable" id="m4"><img src="img/4.jpg" width="150px"></div>
-    <div class="memory droppable" id="m5"><img src="img/5.jpg" width="150px"></div>
-    <div class="memory droppable" id="m6"><img src="img/6.jpg" width="150px"></div>
-    <div class="memory droppable" id="m7"><img src="img/7.jpg" width="150px"></div>
-    <div class="memory droppable" id="m8"><img src="img/8.jpg" width="150px"></div>            
-    <div class="memory droppable" id="m9"><img src="img/9.jpg" width="150px"></div>            
-    <div class="memory droppable" id="m10"><img src="img/10.jpg" width="150px"></div>            
-    <div class="memory droppable" id="m11"><img src="img/11.jpg" width="150px"></div>
-    <div class="memory droppable" id="m12"><img src="img/12.jpg" width="150px"></div>
-    <div class="memory droppable" id="m13"><img src="img/13.jpg" width="150px"></div>
+    <!-- Let your fingers be on board and start this trip.(desktop only)
+    Y/Y -->
     
-    <div class="nest" id="nest" title="let's take a walk"></div>
+    <h1>THE &emsp;WORLD &emsp;@ &emsp;YOUR &emsp;FINGERTIPS</h1>
+    
+        <!-- <h1 id="the">THE</h1>
+        <h1 id="world">WORLD</h1>
+        <h1 id="at">AT</h1>
+        <h1 id="your">YOUR</h1>
+        <h1 id="fingertips">FINGERTIPS</h1>  -->
 
-    <img class="pegman draggable" src="img/pegman.png" alt="pegman">   
 
-    <script>
+    <div class="x">
+    <button class="button" id="question">?</button>
 
-    document.getElementById("nest").onmouseover = function() {mouseOver()};
-    document.getElementById("nest").onmouseout = function() {mouseOut()};
+    </div>
 
-    function mouseOver() {
-    document.getElementById("nest").style.opacity = "0";
-    }
+    <div class="fingers"><img src="img/fingers2.gif" width="400px"></div>
 
-    function mouseOut() {
-    document.getElementById("nest").style.opacity = "1";
-    }   
+    <div class="globe">
+        <div class="map"></div>
+    </div> 
 
-    </script>
+    <div class="destination"><img src="img/bubble.png" width="300px">
+    </div>
+    
+    <h3 id="palestine">
+        <a href="palestine/palestine.html">Palestine</a>
+    </h3>
+
+    <div>
+        <h3><a href=" ">Afghanistan</a></h3>
+    </div>
+
+    <h3 id="congo">
+        <a href=" ">Congo</a>
+    </h3>
+
+    <h3 id="east_turkestan">
+        <a href=" ">East Turkestan</a>
+    </h3>
+
+    <h3 id="ethiopia">
+        <a href=" ">Ethiopia</a>
+    </h3>
+
+    <h3 id="nigeria">
+        <a href=" ">Nigeria</a>
+    </h3>
+
+    <h3 id="north_korea">
+        <a href=" ">North Norea</a>
+    </h3>
+    
+    <h3 id="somalia">
+        <a href=" ">Somalia</a>
+    </h3>
+
+
+
 
     <script src="jquery-3.6.1.min.js"></script>
     <script src="jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
     <script src="scripts.js"></script>
 </body>
