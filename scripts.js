@@ -1,10 +1,9 @@
 //index//
 
-// $(window).keydown(function (evt){
-//         if(evt.keyCode == 191){
-//             alert('Step on NUMBER KEYS to choose your destination. Jump on ENTER if you are ready to go');
-//         }
-// });
+$(document).ready(function() {
+    alert('Let your fingers be on board and start this trip.(desktop only)');        
+});
+
 
 $(window).keydown(function(event) {
     if (event.keyCode == 191) {
