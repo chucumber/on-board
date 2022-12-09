@@ -1,9 +1,8 @@
 //index//
 
-$(document).ready(function() {
-    alert('Let your fingers be on board and start this trip :D(desktop only)');        
-});
-
+$(window).ready(function() {
+    alert("Let your fingers be on board and start this trip. (desktop only)");} 
+);
 
 $(window).keydown(function(event) {
     if (event.keyCode == 191) {
@@ -18,12 +17,110 @@ $(".button").click(function() {
 $(window).keydown(function (evt) {
     if (evt.which == 49) {
         $(".map").toggleClass("one");
+        $(".map").removeClass("two");
+        $(".map").removeClass("three");
+        $(".map").removeClass("four");
+        $(".map").removeClass("five");
+
         $(".destination").css('opacity','1');
 
         $("#palestine").css('visibility','visible');
         $("#palestine").css('opacity','1');
 
-        $("#two").css('visibility','hidden');
+        $("#congo").css('visibility','hidden');
+        $("#east_turkestan").css('visibility','hidden');
+        $("#ethiopia").css('visibility','hidden');
+        $("#nigeria").css('visibility','hidden');
+        $("#north_korea").css('visibility','hidden');
+        $("#somalia").css('visibility','hidden');
+    }
+});
+
+$(window).keydown(function (evt) {
+    if (evt.which == 50) {
+        $(".map").removeClass("one");
+        $(".map").toggleClass("two");
+        $(".map").removeClass("three");
+        $(".map").removeClass("four");
+        $(".map").removeClass("five");
+
+        $(".destination").css('opacity','1');
+
+        $("#congo").css('visibility','visible');
+        $("#congo").css('opacity','1');
+
+        $("#palestine").css('visibility','hidden');
+        $("#east_turkestan").css('visibility','hidden');
+        $("#ethiopia").css('visibility','hidden');
+        $("#nigeria").css('visibility','hidden');
+        $("#north_korea").css('visibility','hidden');
+        $("#somalia").css('visibility','hidden');
+    }
+});
+
+$(window).keydown(function (evt) {
+    if (evt.which == 51) {
+        $(".map").removeClass("one");
+        $(".map").removeClass("two");
+        $(".map").toggleClass("three");
+        $(".map").removeClass("four");
+        $(".map").removeClass("five");
+
+        $(".destination").css('opacity','1');
+
+        $("#east_turkestan").css('visibility','visible');
+        $("#east_turkestan").css('opacity','1');
+
+        $("#palestine").css('visibility','hidden');
+        $("#congo").css('visibility','hidden');
+        $("#ethiopia").css('visibility','hidden');
+        $("#nigeria").css('visibility','hidden');
+        $("#north_korea").css('visibility','hidden');
+        $("#somalia").css('visibility','hidden');
+    }
+});
+
+$(window).keydown(function (evt) {
+    if (evt.which == 52) {
+        $(".map").removeClass("one");
+        $(".map").removeClass("two");
+        $(".map").removeClass("three");
+        $(".map").toggleClass("four");
+        $(".map").removeClass("five");
+
+        $(".destination").css('opacity','1');
+
+        $("#ethiopia").css('visibility','visible');
+        $("#ethiopia").css('opacity','1');
+
+        $("#palestine").css('visibility','hidden');
+        $("#congo").css('visibility','hidden');
+        $("#east_turkestan").css('visibility','hidden');
+        $("#nigeria").css('visibility','hidden');
+        $("#north_korea").css('visibility','hidden');
+        $("#somalia").css('visibility','hidden');
+    }
+});
+
+$(window).keydown(function (evt) {
+    if (evt.which == 53) {
+        $(".map").removeClass("one");
+        $(".map").removeClass("two");
+        $(".map").removeClass("three");
+        $(".map").removeClass("four");
+        $(".map").toggleClass("five");
+
+        $(".destination").css('opacity','1');
+
+        $("#nigeria").css('visibility','visible');
+        $("#nigeria").css('opacity','1');
+
+        $("#palestine").css('visibility','hidden');
+        $("#congo").css('visibility','hidden');
+        $("#east_turkestan").css('visibility','hidden');
+        $("#ethiopia").css('visibility','hidden');
+        $("#north_korea").css('visibility','hidden');
+        $("#somalia").css('visibility','hidden');
     }
 });
 
