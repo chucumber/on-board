@@ -3,16 +3,15 @@
     cursor: none;
 }
 
+@font-face { font-family: keyboard; src: url('font/keyboard/Keyboard.ttf');}
+
 body {
     margin:0;
-    background: rgb(182, 182, 182);
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgb(170, 170, 170) .1em, transparent .3em), linear-gradient(90deg, rgb(170, 170, 170) .1em, transparent .3em);
-    background-size: 1em 1em;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/Minesweeper_square.svg");
+    background-size: 20px 20px;
 }
-
-@font-face { font-family: keyboard; src: url('font/keyboard/Keyboard.ttf');} 
 
 h1 {
     width: 100vw;
@@ -53,12 +52,22 @@ h1 {
     left: 65%;
 } */
 
+small {
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(51, 51, 223);    
+}
+
 button {
     font-size: 15px;
-    color: blue;
+    /* color: blue; */
     font-family: keyboard;
     animation: y 15s linear infinite alternate;
-    background-color:rgba(0, 0, 0, 0);
+    background-color:rgba(255, 255, 255, 0);
     border: none;
 }
 
@@ -66,10 +75,10 @@ button {
     /* position: absolute;
     top:75%;
     right:5%; */
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     animation: x 25s linear infinite alternate;
-    z-index: +5;
+    z-index: 10;
 }
   
     @keyframes x {
@@ -87,25 +96,37 @@ button {
 .destination {
     mix-blend-mode: darken;
     position:absolute;
-    margin-top: 50px;
     opacity: 0;
-    transition: opacity 2s;
-    left: 17vw;
+    transition: opacity .5s;
+    z-index: -3;
+    width: 500px;
+}
+
+#durham {
+    top: 180px;
+    left: 280px;
 }
 
 h3 {
-    position:absolute;
-    margin-top: 80px;
-    font-size: 20px;
-    opacity: 0;
-    visibility: hidden;
+    position:relative;
+    font-size: 25px;
     transition: opacity 2s;
-    left: 25vw;
+    font-family: sans-serif;
+    left:10px;
+    top:-20px;
 }
 
 a {
     color: black;
     text-decoration: none;
+}
+
+.ins {
+    position:fixed;
+    mix-blend-mode: darken;
+    right: 300px;
+    top: 75px;
+    transform: rotate(-7deg);
 }
 
 .fingers {
@@ -133,7 +154,7 @@ a {
     width: inherit;
     background: url("img/world-map.jpeg");
     border-radius: 50%;
-    box-shadow: inset 25px 0px 35px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 80px 0px 65px 3px rgba(0, 0, 0, 0.5);
     background-size: 800px;
     animation-name: rotate;
     animation-duration: 5s;
@@ -157,7 +178,7 @@ a {
 
 @keyframes one {
     from{ background-position: unset;}
-    to{ background-position: 440px;}
+    to{ background-position: 40px;}
   }
 
 .map.two {
